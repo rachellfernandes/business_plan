@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Squish &amp; Co. Squishy Shop</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="promo"><span>Free shipping on orders ₱500 and up</span><span>Cash on delivery available</span><span>7-day replacement for defects</span></div>
+<nav><div class="wrap">
+<span class="logo">Squish &amp; Co.</span>
+<a class="hide" href="#shop">Shop</a>
+<button class="cartbtn" id="open" aria-label="Open cart">🛒 Cart<span id="count">0</span></button>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<h1>Squishies that look good enough to eat.</h1>
+<p><b>Squish. Smile. Repeat.</b> Cute squishies at student-friendly prices. Butter sticks, cheese cubes, croissants, pandesal and pineapple buns, starting at ₱79.</p>
+<p><a class="btn" href="#shop" style="text-decoration:none;display:inline-block">Shop squishies</a></p>
+</div>
+<div class="stack"><img src="images/butter_duo_pink_n_yellow.jpg" alt="Pink and yellow butter squishies"><img src="images/cheese_squishy_pink_n_yellow.jpg" alt="Pink and yellow cheese cube squishies"><img src="images/crossant_squishy_1.jpg" alt="Croissant squishy"></div>
+</div></header>
+
+<section id="shop" style="background:var(--soft)"><div class="wrap">
+<h2>Shop</h2>
+<p class="sub">Tap a squishy to see all its photos, pick a color, then add to cart.</p>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<footer><div class="wrap">
+<div class="fg">
+<div><span class="logo">Squish &amp; Co.</span><p><b>Squish. Smile. Repeat.</b></p><p>An online squishy shop made by a student, for students. Affordable, cute and always in fresh stock.</p></div>
+<div><h4>Shop</h4><a href="#shop" data-open="butter">Butter Sticks</a><a href="#shop" data-open="cheese">Cheese Cubes</a><a href="#shop" data-open="croissant">Croissants</a><a href="#shop" data-open="pandesal">Pandesal</a><a href="#shop" data-open="pine">Pineapple Buns</a></div>
+<div><h4>Good to know</h4><span>Ships within 2 days</span><span>Shipping ₱49, free on orders ₱500 and up</span><span>7-day replacement for defects</span><span>Packed with bubble wrap</span></div>
+<div><h4>Contact us</h4><span>Messenger: @squishandco</span><span>Instagram: @squishandco</span><span>TikTok: @squishandco</span><a href="mailto:hello@squishandco.ph">hello@squishandco.ph</a><span>Open Mon to Sat, 9 AM to 6 PM</span></div>
+</div>
+<div class="pay"><b>We accept</b><i>GCash</i><i>Maya</i><i>Cash on delivery</i></div>
+<div class="bot">© 2026 Squish &amp; Co. All rights reserved. Made with love in the Philippines.</div>
+</div></footer>
+
+<div id="veil"></div>
+<aside id="drawer" aria-label="Cart">
+<div class="dh"><h3>Your cart</h3><button id="close" aria-label="Close cart">×</button></div>
+<div id="items"></div>
+<div class="df"><p><span>Subtotal</span><b id="sub"></b></p><p><span>Shipping</span><b id="ship"></b></p><p><span>Total</span><b id="tot" style="font-size:1.2rem"></b></p>
+<button class="btn" id="co">Place order</button><button class="btn alt" id="clr" style="margin-top:8px">Clear cart</button></div>
+</aside>
+<div id="pm" role="dialog" aria-modal="true" aria-label="Product photos"><div class="pb">
+<button class="x" id="px" aria-label="Close">×</button>
+<div class="sw"><div id="sl"></div><button class="ar l" id="pl" aria-label="Previous photo">‹</button><button class="ar r" id="pn" aria-label="Next photo">›</button><div id="dots"></div></div>
+<div class="pi"><h3 id="mt"></h3><p id="md"></p><div class="chips" id="mc"></div><div class="price" id="mp"></div><button class="btn" id="ma">Add to cart</button></div>
+</div></div>
+<div id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
